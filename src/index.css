@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins", sans-serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #272121;
+}
+
+input {
+  outline: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* color: #213547; */
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+h2 {
+  @apply text-3xl font-bold lg:mb-6 text-center h-16 flex justify-center items-center;
+}
+
+h3 {
+  @apply text-2xl font-bold w-full my-auto text-center mr-1;
+}
+
+img {
+  @apply text-[#90D26D] absolute opacity-25 z-0 w-48; 
+}
+
+label {
+  @apply relative w-full flex flex-col lg:flex-row justify-center items-center;
+}
+
+label span:first-child {
+  @apply text-2xl lg:mr-2;
+}
+
+label span:last-child {
+  @apply text-5xl font-bold ml-2 absolute top-[50%] lg:top-[40%] -right-2 -rotate-12 text-[#A1DD70];
+}
+
+input {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  @apply rounded-md py-4 px-2 text-3xl font-black w-48;
+}
+
+.input-group {
+  @apply flex flex-col justify-center lg:justify-start items-center lg:items-end gap-4 mb-4;
+}
+
+.card-group {
+  @apply relative rounded-2xl flex flex-col justify-around items-center lg:w-[406px] py-10 px-8 text-slate-50 z-50;
+}
+
+.card-group_in {
+  @apply after:duration-500 before:duration-500 duration-500  group-hover:before:translate-x-11 hover:before:-translate-y-11  group-hover:after:translate-x-11 group-hover:after:translate-y-16 after:absolute after:rounded-full after:-z-10 after:blur-2xl after:bottom-32 after:right-16 after:w-40 after:h-40 before:absolute before:w-40 before:h-40 before:rounded-full before:opacity-60 after:opacity-60 before:-z-10 before:blur-2xl before:top-20 before:right-16 flex flex-col justify-between h-full font-extrabold text-6xl z-10;
+}
+
+.results-container {
+  @apply flex flex-col items-center mb-4 gap-2 w-full;
+}
+
+.results-container span {
+  background-color: #121212;
+  @apply rounded-md py-2 px-2 text-3xl font-bold h-24 w-full text-center flex justify-center items-center;
+}
